@@ -1,0 +1,21 @@
+{
+  "name": "kanban-export-lint",
+  "version": "0.1.0",
+  "description": "Parses kanban board JSON exports and reports errors with exact line and column numbers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "kanban",
+    "json",
+    "parser",
+    "validation"
+  ],
+  "author": "amartin242",
+  "license": "MIT"
+}
