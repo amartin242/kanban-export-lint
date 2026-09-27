@@ -73,6 +73,16 @@ export.json:3:1 - unexpected character ']', expected a value (object, array, str
 pointing at the closing `]` where a value was expected instead, rather than
 a generic "unexpected token" with no location.
 
+## Development
+
+```
+npm test
+```
+
+runs the suite with node's built-in test runner (`node --test`). There's no
+test framework dependency - `tsconfig.test.json` compiles `src` and `test`
+together to a scratch directory and `node --test` runs the result.
+
 ## Why not just use `JSON.parse`
 
 `JSON.parse` is faster and it's fine for well-formed input, but it only
